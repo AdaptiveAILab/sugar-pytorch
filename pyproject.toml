@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sugar-pytorch"
+version = "0.3.0"
+description = "SUGAR: replace the backward pass of ReLU-like activations with a surrogate gradient (FGI) while keeping the forward pass unchanged."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Adaptive AI Lab" }]
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["torch>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "torchvision"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

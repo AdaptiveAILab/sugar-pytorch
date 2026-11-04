@@ -1,0 +1,13 @@
+# Python caches / build artefacts
+__pycache__/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+
+# auto-generated, torch-build-specific golden fixtures (tests regenerate them)
+tests/fixtures/
+
+# macOS metadata
+.DS_Store
